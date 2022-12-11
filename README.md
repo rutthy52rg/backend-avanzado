@@ -45,7 +45,7 @@
 
         |------practica_backend_avanzado
         |    |-----bin
-        |       |---www.js
+        |       |---www
         |    |-----lib
         |       |---connectMongoose.js
         |       |---i18nConfigure.js (multi-idoma)
@@ -83,7 +83,7 @@
         |       |---error.html
         |       |---index.html
         |       |---loging.html
-        |   |---.env
+        |   |---.env.example(config variables de entorno, sigue instrucciones)
         |   |---anuncios.json (anuncios para initDB )
         |   |---initDB.js
-        |   |---- Readme.md
+        |   |---Readme.md

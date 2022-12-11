@@ -18,8 +18,9 @@ async function main() {
 
       // Save and overwrite the image
       await urlImage.writeAsync(urlResult);
-      
-      console.log(`URL de previsualización del thumbnail ${urlResult}`);
+
+      console.log(`URL de previsualización del thumbnail:
+      \n ${urlResult}`);
       done();
     } catch (err) {
       done({ message: err.message });
