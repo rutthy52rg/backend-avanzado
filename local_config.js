@@ -1,7 +1,9 @@
-'use strict';
-
+"use strict";
 module.exports = {
+  anuncios100: {
+    imagesURLBasePath: "/images/uploads/100/",
+  },
   anuncios: {
-    imagesURLBasePath: '/images/anuncios/'
-  }
+    imagesURLBasePath: "./images/uploads/",
+  },
 };

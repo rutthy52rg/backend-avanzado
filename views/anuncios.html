@@ -1,12 +1,14 @@
-<%- include ('_header.ejs') -%>
+<%- include ('_header.html') -%>
 
-<div class="navbar navbar-default navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top ">
   <div class="container">
-    <div class="navbar-header"><a href="/" class="navbar-brand">Nodeapi</a></div>
+    <div class="navbar-header"><a href="/" class="navbar-brand">Nodeapi</a>
+
+  </div>
   </div>
 </div>
 
-<div class="container">
+<div class="container py-5 my-5 justify-content-center">
   <div class="row">
     <div class="col-md-12">
       <h1>Lista de anuncios</h1>
@@ -21,7 +23,7 @@
           <th>Nombre</th>
           <th>Venta</th>
           <th style="text-align: right">Precio</th>
-          <th>Foto</th>
+          <th class="text-center">Foto</th>
           <th>Tags</th>
           <th>#</th>
         </tr></thead>
@@ -31,7 +33,7 @@
             <td><%= anuncio.nombre %></td>
             <td><%= anuncio.venta ? 'Si' : 'No' %></td>
             <td style="text-align: right"><%= anuncio.precio / 100 %>€</td>
-            <td><img src="<%= anuncio.foto %>"></td>
+            <td class="text-center"><img src="<%= anuncio.foto %>" ></td>
             <td><%= anuncio.tags %></td>
             <td><%= anuncio._id %></td>
           </tr>
@@ -55,4 +57,4 @@
   <a href="/">Volver a la home</a>
 
 </div>
-<%- include ('_footer.ejs') -%>
+<%- include ('_footer.html') -%>
