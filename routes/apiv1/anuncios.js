@@ -63,8 +63,8 @@ router.post(
     const anuncio = new Anuncio(anuncioData);
     console.log(anuncio);
     const anuncioGuardado = await anuncio.save();
-
     res.json({ result: anuncioGuardado });
+    createThumbnail(anuncioData.foto);
   })
 );
 
@@ -96,10 +96,10 @@ router.put("/:id", upload.single("foto"), async (req, res, next) => {
 router.delete("/:id", async (req, res, next) => {
   try {
     const _id = req.params.id;
-    const anuncio = await Anuncio.findOne({ _id: _id });
+    //const anuncio = await Anuncio.findOne({ _id: _id });
     // const path = `./public/images/uploads/${anuncio.foto}`;
     // console.log("res", path);
-    // await Anuncio.deleteOne({ _id: _id });
+    await Anuncio.deleteOne({ _id: _id });
     // await fs.unlinkSync(path);
     res.json({ borrado: `anuncio borrado ${_id}` });
   } catch (error) {

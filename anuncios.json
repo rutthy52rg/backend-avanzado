@@ -1,18 +1,164 @@
 {
-  "anuncios": [
-    {
-      "nombre": "Bicicleta",
-      "venta": true,
-      "precio": 23015,
-      "foto": "100/foto-1670701247515-bici.jpg",
-      "tags": [ "lifestyle", "motor"]
-    },
-    {
-      "nombre": "iPhone 3GS",
-      "venta": false,
-      "precio": 5000,
-      "foto": "100/foto-1670704933549-iphone.png",
-      "tags": [ "lifestyle", "mobile"]
-    }
-  ]
-}
+    "anuncios": [
+      {
+        "_id": "6395ca8955307c198d01c616",
+        "nombre": "Bicicleta",
+        "venta": true,
+        "precio": 23015,
+        "foto": "foto-1670760852586-bici.jpg",
+        "tags": [
+          "lifestyle",
+          "motor"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c618",
+        "nombre": "iPhone 3GS",
+        "venta": false,
+        "precio": 5000,
+        "foto": "foto-1670760915830-iphone.png",
+        "tags": [
+          "lifestyle",
+          "mobile"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c61a",
+        "nombre": "bicicleta",
+        "venta": true,
+        "precio": 220,
+        "foto": "foto-1670761256578-bicicleta.png",
+        "tags": [
+          "deporte",
+          "aire libre"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c61c",
+        "nombre": "coche",
+        "venta": true,
+        "precio": 15500,
+        "foto": "foto-1670761299134-coche.png",
+        "tags": [
+          "motor"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c61e",
+        "nombre": "ordenador",
+        "venta": false,
+        "precio": 1500,
+        "foto": "foto-1670761320727-ordenador.png",
+        "tags": [
+          "technology"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c620",
+        "nombre": "moto",
+        "venta": false,
+        "precio": 300,
+        "foto": "foto-1670761340077-moto.png",
+        "tags": [
+          "motor"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c622",
+        "nombre": "moto2",
+        "venta": true,
+        "precio": 300,
+        "foto": "foto-1670761360037-moto2.png",
+        "tags": [
+          "motor"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c624",
+        "nombre": "zapatillas",
+        "venta": true,
+        "precio": 25,
+        "foto": "foto-1670761373444-zapatillas.png",
+        "tags": [
+          "sport"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c626",
+        "nombre": "pelota",
+        "venta": true,
+        "precio": 40,
+        "foto": "foto-1670761390995-pelota.png",
+        "tags": [
+          "sport"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c628",
+        "nombre": "chandal",
+        "venta": false,
+        "precio": 70,
+        "foto": "foto-1670761404858-chandal.png",
+        "tags": [
+          "lifestyle",
+          "sport"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c62a",
+        "nombre": "piragua",
+        "venta": true,
+        "precio": 220,
+        "foto": "foto-1670761419359-piragua.png",
+        "tags": [
+          "lifestyle",
+          "sport"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c62c",
+        "nombre": "caravana",
+        "venta": true,
+        "precio": 35000,
+        "foto": "foto-1670761435411-caravana.png",
+        "tags": [
+          "lifestyle",
+          "motor"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395ca8955307c198d01c62e",
+        "nombre": "patines",
+        "venta": true,
+        "precio": 50,
+        "foto": "foto-1670761450834-patines.png",
+        "tags": [
+          "lifestyle"
+        ],
+        "__v": 0
+      },
+      {
+        "_id": "6395cfd29cffc8646aa4381c",
+        "nombre": "yoyo",
+        "venta": true,
+        "precio": 25,
+        "foto": "foto-1670762450153-yoyo.jpg",
+        "tags": [
+          "sport"
+        ],
+        "__v": 0
+      }
+    ]
+  }

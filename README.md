@@ -86,5 +86,6 @@
         |   |---.env.example(config variables de entorno, sigue instrucciones)
         |   |---anuncios.json (anuncios para initDB )
         |   |---ecosystem.config.js (configuración para iniciar app y microservicios a la vez)
+        |   |---local_config.js (configuración rutas imagenes auncios)
         |   |---initDB.js
         |   |---Readme.md
