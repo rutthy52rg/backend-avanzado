@@ -15,7 +15,13 @@ module.exports = {
     {
       script: "microservicios/thumbnailService.js",
       watch: ["./microservicios/thumbnailService.js"],
+      log_date_format: "YYYY-MM-DD HH:mm Z",
     },
+    // {
+    //   script: "microservicios/emailService.js",
+    //   watch: ["./microservicios/emailService.js"],
+    //   log_date_format: "YYYY-MM-DD HH:mm Z",
+    // },
   ],
 
   deploy: {

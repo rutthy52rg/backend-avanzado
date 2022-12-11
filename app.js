@@ -14,7 +14,6 @@ const MongoStore = require("connect-mongo");
 var i18n = require("./lib/i18nConfigure");
 const sessionAuth = require("./lib/sessionAuthMiddleware");
 const jwtAuthMiddleware = require("./lib/JWTAuthMiddleware");
-const swaggerMiddleware = require("./lib/swaggerMiddleware");
 
 /* ========== routes  ============== */
 //importamos login llamando a la clase
@@ -37,7 +36,6 @@ app.engine("html", require("ejs").__express); // ese motor usa ejs y ahora renom
 /**
  * Global Template variables
  */
-app.locals.title = "Mi NodePop";
 
 /**
  * Middlewares
@@ -53,6 +51,7 @@ app.use(express.static(path.join(__dirname, "public")));
 //setup de i18n
 app.use(i18n.init); //lee cabeceras a que idioma está y ya sabe que idioma poner y guarda cookies en change-locales. Para que lea correctamente las cookies tendrá que estar despues de cookieParser
 
+app.locals.title = "Practice Backend Advanced";
 /**
  * API v1 routes
  */
@@ -68,7 +67,7 @@ app.use("/apiv1/authenticate", loginControllerAPI.postJWT);
 // middleware cookies session => control acceso a la WEB por usuario y contraseña con COOKIES
 app.use(
   session({
-    name: "mi-nodepop-session",
+    name: "mi-practica-backend-avanzado-session",
     secret: ".OmbY'yR5e$^N-$mHRx",
     saveUninitialized: true,
     resave: false,

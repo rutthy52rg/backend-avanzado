@@ -15,7 +15,7 @@ class LoginController {
   }
 
   /* ============  LOGIN POST DESDE EL WEBSITE =============== */
-  
+
   async post(req, res, next) {
     try {
       const { email, password } = req.body;
@@ -30,7 +30,7 @@ class LoginController {
         res.render("login");
         return;
       }
-      
+
       // si existe y la contraseña coincide
       // => añado en la sesión del usuario,  que es un usuario logado  y le asigno su id, el middleware creará una cookie con el identificador de la sessión
 

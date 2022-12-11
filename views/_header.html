@@ -30,11 +30,11 @@
                     <i class="bi-list"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0 align-middle">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="about-us"><%= __('About us') %></a></li>
                         <% if(session.userLoged) { %>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="anuncios"><%= __('Announcements') %></a></li>
-                          <li class="nav-item"><%= __('Hello') %><%= email %></a></li>
+                          <li class="nav-item hello"><%= __('Hello') %> <%= email %></a></li>
                          <% } %>
                     </ul>
                     <% if(!session.userLoged) { %>

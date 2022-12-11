@@ -16,6 +16,7 @@ router.get(
       const readme = await fsPromises.readFile(filename, "utf8");
       const userId = req.session.userLoged;
       const user = await User.findById(userId);
+      res.locals.title = req.__("Practice Backend Advanced");
       res.locals.email = user ? user.email : "";
       res.render("index", { readme });
     } catch (err) {

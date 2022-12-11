@@ -54,7 +54,8 @@
         |       |---uploadConfig.js (subida de ficheros api a uploads)
         |       |---utils.js 
         |    |-----microservicios
-        |       |---thumbnailsService.js        
+        |       |---emailService.js (email al logarse -> activa y configura .env y ecosystem)
+        |       |---thumbnailsService.js (creación de thumbnails imagenes carpeta 100/)       
         |    |-----locales (traducciones- i18n)
         |       |---es.json
         |       |---en.json
@@ -82,10 +83,10 @@
         |       |---claim.html
         |       |---error.html
         |       |---index.html
-        |       |---loging.html
+        |       |---login.html
         |   |---.env.example(config variables de entorno, sigue instrucciones)
         |   |---anuncios.json (anuncios para initDB )
         |   |---ecosystem.config.js (configuración para iniciar app y microservicios a la vez)
         |   |---local_config.js (configuración rutas imagenes auncios)
-        |   |---initDB.js
+        |   |---initDB.js (initial BD data)
         |   |---Readme.md

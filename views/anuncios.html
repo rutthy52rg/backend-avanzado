@@ -11,8 +11,8 @@
 <div class="container py-5 my-5 justify-content-center">
   <div class="row">
     <div class="col-md-12">
-      <h1>Lista de anuncios</h1>
-      <p class="lead">Listando: <%= anuncios.length %> de <%= total %></p>
+      <h1><%= __("Announcements list") %></h1>
+      <p class="lead"><%= __("Listing") %>: <%= anuncios.length %> de <%= total %></p>
     </div>
   </div>
 
@@ -20,10 +20,10 @@
     <div class="col-md-12">
       <table class="table table-hover">
         <thead><tr>
-          <th>Nombre</th>
-          <th>Venta</th>
-          <th style="text-align: right">Precio</th>
-          <th class="text-center">Foto</th>
+          <th><%= __("Name") %></th>
+          <th><%= __("Sale") %></th>
+          <th style="text-align: right"><%= __("Price") %></th>
+          <th class="text-center"><%= __("Picture") %></th>
           <th>Tags</th>
           <th>#</th>
         </tr></thead>
@@ -41,14 +41,14 @@
         </tbody>
       </table>
 
-      <p>Ejemplos:</p>
+      <p><%= __("Examples") %>:</p>
 
       <ul>
-        <li><a href="?">Todos (max. 1000)</a></li>
-        <li><a href="?start=2&limit=2">Paginado</a></li>
-        <li><a href="?sort=precio">Ordenado por precio ascendente</a></li>
-        <li><a href="?sort=-precio">Ordenado por precio descendente</a></li>
-        <li><a href="?tag=mobile">Con tag mobile</a></li>
+        <li><a href="?"><%= __("All") %> (max. 1000)</a></li>
+        <li><a href="?start=2&limit=2"><%= __("Paginated") %></a></li>
+        <li><a href="?sort=precio"><%= __("Sort by price ascending") %></a></li>
+        <li><a href="?sort=-precio"><%= __("Sorted by descending price") %></a></li>
+        <li><a href="?tag=mobile"><%= __("With tag mobile") %></a></li>
       </ul>
 
     </div>
